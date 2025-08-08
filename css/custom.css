@@ -1500,6 +1500,7 @@ body:has(.offcanvas) {
 .why-choose-us {
   position: relative;
   padding: 100px 0;
+  background-color: #080f13;
 }
 
 .why-choose-us::before {
