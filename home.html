@@ -1,0 +1,2676 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="OctoTEK.io" />
+    <!-- Page Title -->
+    <title data-en="Mazajj - Organic Coffee" data-ar="مازاج - قهوة طبيعية">
+      Mazajj - Organic Coffee
+    </title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <!-- Google Fonts Css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <!-- SlickNav Css -->
+    <link href="css/slicknav.min.css" rel="stylesheet" />
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- Font Awesome Icon Css-->
+    <link href="css/all.min.css" rel="stylesheet" media="screen" />
+    <!-- Animated Css -->
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Magnific Popup Core Css File -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <!-- Mouse Cursor Css File -->
+    <link rel="stylesheet" href="css/mousecursor.css" />
+    <!-- Main Custom Css -->
+    <link href="css/custom.css" rel="stylesheet" media="screen" />
+    <style>
+      /* Business Popup Styles */
+      .business-popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 10000;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(5px);
+      }
+
+      .business-popup {
+        background: linear-gradient(135deg, #0d0c0d, #ee4d9b);
+        color: white;
+        padding: 40px;
+        border-radius: 20px;
+        text-align: center;
+        max-width: 500px;
+        width: 90%;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        position: relative;
+        animation: popupSlideIn 0.5s ease-out;
+      }
+
+      @keyframes popupSlideIn {
+        from {
+          opacity: 0;
+          transform: translateY(-50px) scale(0.9);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      .business-popup h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        font-weight: 700;
+        color: #fff;
+      }
+
+      .business-popup p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+        color: #f0f0f0;
+      }
+
+      .business-popup .price {
+        font-size: 32px;
+        font-weight: bold;
+        color: #ffd700;
+        margin: 20px 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .business-popup .highlight {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 15px;
+        border-radius: 10px;
+        margin: 20px 0;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .business-popup .contact-info {
+        margin-top: 25px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .business-popup .contact-info p {
+        font-size: 16px;
+        margin: 5px 0;
+      }
+
+      /* Language Switcher Styles */
+      .language-switcher {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 9999;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 25px;
+        padding: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+      }
+
+      .language-switcher button {
+        background: none;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        margin: 0 2px;
+      }
+
+      .language-switcher button.active {
+        background: #8b4513;
+        color: white;
+      }
+
+      .language-switcher button:hover {
+        background: #a0522d;
+        color: white;
+      }
+
+      /* RTL Support */
+      [dir="rtl"] {
+        direction: rtl;
+        text-align: right;
+      }
+
+      [dir="rtl"] .language-switcher {
+        left: 20px;
+        right: auto;
+      }
+
+      [dir="rtl"] .navbar-nav {
+        padding-right: 0;
+      }
+
+      [dir="rtl"] .hero-btn a {
+        margin-left: 0;
+        margin-right: 15px;
+      }
+
+      [dir="rtl"] .hero-btn a:last-child {
+        margin-right: 0;
+        margin-left: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Language Switcher -->
+    <!-- <div class="language-switcher">
+      <button class="lang-btn active" data-lang="en" data-dir="ltr">EN</button>
+      <button class="lang-btn" data-lang="ar" data-dir="rtl">عربي</button>
+    </div> -->
+
+    <!-- Preloader Start -->
+    <div class="preloader">
+      <div class="loading-container">
+        <div class="loading"></div>
+        <div id="loading-icon"><img src="images/logo.svg" alt="" /></div>
+      </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Business Popup -->
+    <div class="business-popup-overlay" id="businessPopup">
+      <div class="business-popup">
+        <h2>🚀 Exclusive Business Opportunity!</h2>
+        <p>Would you like this stunning website to represent Mazajj?</p>
+
+        <div class="highlight">
+          <p>This complete, professional website can be yours today!</p>
+        </div>
+
+        <div class="price">Only $2,000</div>
+
+        <p>
+          Get this beautiful, fully-functional website for your business
+          immediately. No waiting, no delays - you can have it today!
+        </p>
+
+        <div class="contact-info">
+          <p><strong>Contact us to claim this offer:</strong></p>
+          <p>📧 Email: info@octotek.io</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Topbar Section Start -->
+    <div class="topbar">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-9">
+            <!-- Topbar Contact Information Start -->
+            <div class="topbar-contact-info">
+              <ul>
+                <li>
+                  <a href="/locations.html"
+                    ><i class="fa-solid fa-location-dot"></i> Find Locations
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Topbar Contact Information End -->
+          </div>
+
+          <div class="col-md-3">
+            <!-- Topbar Social Links Start -->
+            <div class="topbar-social-links">
+              <ul>
+                <li>
+                  <a href="https://www.instagram.com/mazajjorganiccoffee"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.tiktok.com/@mazajj.organic.coffee"
+                    ><i class="fa-brands fa-tiktok"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/mazajjorganiccoffee"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <!-- Topbar Social Links End -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar Section End -->
+
+    <!-- Header Start -->
+    <header class="main-header">
+      <div class="header-sticky">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <!-- Logo Start -->
+            <a class="navbar-brand" href="./">
+              <img src="images/logo.svg" alt="Logo" />
+              <span class="logo-text">Mazajj</span>
+            </a>
+            <!-- Logo End -->
+
+            <!-- Main Menu Start -->
+            <div class="collapse navbar-collapse main-menu">
+              <div class="nav-menu-wrapper">
+                <ul class="navbar-nav mr-auto" id="menu">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="./"
+                      data-en="Home"
+                      data-ar="الرئيسية"
+                      >Home</a
+                    >
+                    <!-- <ul>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="index.html"
+                          data-en="Home - Main"
+                          data-ar="الرئيسية - الأساسي"
+                          >Home - Main</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="index-video.html"
+                          data-en="Home - Video"
+                          data-ar="الرئيسية - الفيديو"
+                          >Home - Video</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="index-slider.html"
+                          data-en="Home - Slider"
+                          data-ar="الرئيسية - الشرائح"
+                          >Home - Slider</a
+                        >
+                      </li>
+                    </ul> -->
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="about.html"
+                      data-en="About Us"
+                      data-ar="من نحن"
+                      >About Us</a
+                    >
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="services.html"
+                      data-en="Services"
+                      data-ar="الخدمات"
+                      >Services</a
+                    >
+                  </li> -->
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="menu.html"
+                      data-en="Menu"
+                      data-ar="القائمة"
+                      >Menu</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="locations.html"
+                      data-en="Locations"
+                      data-ar="المواقع"
+                      >Locations</a
+                    >
+                  </li>
+                  <!-- <li class="nav-item submenu">
+                    <a
+                      class="nav-link"
+                      href="#"
+                      data-en="Pages"
+                      data-ar="الصفحات"
+                      >Pages</a
+                    >
+                    <ul>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="service-single.html"
+                          data-en="Service Details"
+                          data-ar="تفاصيل الخدمة"
+                          >Service Details</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="blog.html"
+                          data-en="Blog"
+                          data-ar="المدونة"
+                          >Blog</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="blog-single.html"
+                          data-en="Blog Details"
+                          data-ar="تفاصيل المدونة"
+                          >Blog Details</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="projects.html"
+                          data-en="Projects"
+                          data-ar="المشاريع"
+                          >Projects</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="project-single.html"
+                          data-en="Project Details"
+                          data-ar="تفاصيل المشروع"
+                          >Project Details</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="team.html"
+                          data-en="Team"
+                          data-ar="الفريق"
+                          >Team</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="team-single.html"
+                          data-en="Team Details"
+                          data-ar="تفاصيل الفريق"
+                          >Team Details</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="image-gallery.html"
+                          data-en="Image Gallery"
+                          data-ar="معرض الصور"
+                          >Image Gallery</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="video-gallery.html"
+                          data-en="Video Gallery"
+                          data-ar="معرض الفيديو"
+                          >Video Gallery</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="faqs.html"
+                          data-en="FAQs"
+                          data-ar="الأسئلة الشائعة"
+                          >FAQs</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="404.html">404</a>
+                      </li>
+                    </ul>
+                  </li> -->
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="contact.html"
+                      data-en="Contact Us"
+                      data-ar="اتصل بنا"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li class="nav-item highlighted-menu">
+                    <a
+                      class="nav-link"
+                      href="locations.html"
+                      data-en="Find Locations"
+                      data-ar="عرض المواقع"
+                      >Find Locations</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Header Button Box Start -->
+              <div class="header-button-box">
+                <!-- Header Btn Start -->
+                <div class="header-btn">
+                  <a
+                    href="locations.html"
+                    class="btn-default btn-highlighted"
+                    data-en="Find Locations"
+                    data-ar="عرض المواقع"
+                    >Find Locations</a
+                  >
+                </div>
+                <!-- Header Btn End -->
+
+                <!-- Header Sidebar Btn Start -->
+                <div class="header-sidebar-btn">
+                  <!-- Toggle Button trigger modal Start -->
+                  <button
+                    class="btn btn-popup"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
+                  >
+                    <img src="images/header-sidebar-btn.svg" alt="" />
+                  </button>
+                  <!-- Toggle Button trigger modal End -->
+
+                  <!-- Header Sidebar Start -->
+                  <div
+                    class="offcanvas offcanvas-end"
+                    tabindex="-1"
+                    id="offcanvasRight"
+                  >
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+
+                    <!-- Offcanvas Body Start -->
+                    <div class="offcanvas-body">
+                      <!-- Header Title Box Start -->
+                      <div class="header-title-box">
+                        <h2>welcome to Mazajj Organic Coffee</h2>
+                        <p>
+                          Mazajj Organic Coffee is a coffee shop that serves
+                          organic coffee and tea.
+                        </p>
+                      </div>
+                      <!-- Header Title Box End -->
+
+                      <!-- Header Sidebar Info Start -->
+                      <div class="header-sidebar-info">
+                        <h2><a href="tel:+13465941017">(346) 594-1017</a></h2>
+                        <ul>
+                          <li>
+                            3810 N Mason Rd building 2 unit A, Katy, TX 77449
+                          </li>
+                          <li>5549 Richmond Ave., Houston, TX 77056</li>
+                        </ul>
+                      </div>
+                      <!-- Header Sidebar Info End -->
+
+                      <!-- Header Sidebar Timing Start -->
+                      <div class="header-sidebar-timing">
+                        <ul>
+                          <li>Monday - Thursday : 8:00am - 12:00pm</li>
+                          <li>Friday - Saturday : 8:00am - 1:00am</li>
+                          <li>Sunday : 8:00am - 12:00pm</li>
+                        </ul>
+                      </div>
+                      <!-- Header Sidebar Timing End -->
+
+                      <!-- Header Sidebar Social List Start -->
+                      <div class="header-sidebar-social-list">
+                        <ul>
+                          <li>
+                            <a
+                              href="https://www.instagram.com/mazajjorganiccoffee"
+                              ><i class="fa-brands fa-instagram"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.facebook.com/mazajjorganiccoffee"
+                              ><i class="fa-brands fa-facebook-f"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.tiktok.com/@mazajj.organic.coffee"
+                              ><i class="fa-brands fa-tiktok"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Header Sidebar Social List End -->
+                    </div>
+                    <!-- Offcanvas Body End -->
+                  </div>
+                  <!-- Header Sidebar End -->
+                </div>
+                <!-- Header Sidebar Btn End -->
+              </div>
+              <!-- Header Button Box End -->
+            </div>
+            <!-- Main Menu End -->
+            <div class="navbar-toggle"></div>
+          </div>
+        </nav>
+        <div class="responsive-menu"></div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <div class="hero parallaxie">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8 col-md-10">
+            <!-- Hero Content Start -->
+            <div class="hero-content">
+              <!-- Section Title Start -->
+              <div class="section-title">
+                <h3
+                  class="wow fadeInUp"
+                  data-en="crafted with love, served with passion"
+                  data-ar="مصنوع بحب، يقدم بشغف"
+                >
+                  crafted with love, served with passion
+                </h3>
+                <h1
+                  class="text-anime-style-3"
+                  data-cursor="-opaque"
+                  data-en="Step into the aroma of freshly coffee"
+                  data-ar="خطو إلى عبق القهوة الطازجة"
+                >
+                  Step into the aroma of fresh coffee
+                </h1>
+                <p
+                  class="wow fadeInUp"
+                  data-wow-delay="0.2s"
+                  data-en="Discover a place where every cup is a masterpiece, crafted with passion and precision. From the rich, bold flavors of our signature blends to the cozy ambiance that feels like home."
+                  data-ar="اكتشف مكاناً حيث كل فنجان تحفة فنية، مصنوعة بشغف ودقة. من النكهات الغنية والجريئة لمزيجنا المميز إلى الأجواء الدافئة التي تشعرك بالمنزل."
+                >
+                  Discover a place where every cup is a masterpiece, crafted
+                  with passion and precision. From the rich, bold flavors of our
+                  signature blends to the cozy ambiance that feels like home.
+                </p>
+              </div>
+              <!-- Section Title End -->
+
+              <!-- Hero Button Start -->
+              <div class="hero-btn wow fadeInUp" data-wow-delay="0.4s">
+                <a
+                  href="about.html"
+                  class="btn-default"
+                  data-en="Discover coffee"
+                  data-ar="اكتشف القهوة"
+                  >Discover coffee</a
+                >
+                <a
+                  href="locations.html"
+                  class="btn-default btn-highlighted"
+                  data-en="Find Locations"
+                  data-ar="احجز طاولة"
+                  >Find Locations</a
+                >
+              </div>
+              <!-- Hero Button End -->
+            </div>
+            <!-- Hero Content End -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Section End -->
+
+    <!-- Scrolling Ticker Section Start -->
+    <div class="our-scrolling-ticker">
+      <!-- Scrolling Ticker Start -->
+      <div class="scrolling-ticker-box">
+        <div class="scrolling-content">
+          <span><img src="images/asterisk-icon.svg" alt="" />Espresso</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Americano</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Latte</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Cappuccino</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Mocha</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Macchiato</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Cold Brew</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Espresso</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Americano</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Latte</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Cappuccino</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Mocha</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Macchiato</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Cold Brew</span>
+        </div>
+
+        <div class="scrolling-content">
+          <span><img src="images/asterisk-icon.svg" alt="" />Espresso</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Americano</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Latte</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Cappuccino</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Mocha</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Macchiato</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Cold Brew</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Espresso</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Americano</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Latte</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Cappuccino</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Mocha</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Macchiato</span>
+          <span><img src="images/asterisk-icon.svg" alt="" />Cold Brew</span>
+        </div>
+      </div>
+      <!-- Scrolling Ticker End -->
+    </div>
+    <!-- Scrolling Ticker Section End -->
+
+    <!-- About us Section Start -->
+    <div class="about-us">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <!-- About us Content Start -->
+            <div class="about-us-content">
+              <!-- Section Title Start -->
+              <div class="section-title">
+                <h3 class="wow fadeInUp">about us</h3>
+                <h2 class="text-anime-style-3" data-cursor="-opaque">
+                  Bringing people together, one cup at a time
+                </h2>
+              </div>
+              <!-- Section Title End -->
+
+              <!-- About Body List Start -->
+              <div class="about-body-list">
+                <!-- About Body Item Start -->
+                <div class="about-body-item wow fadeInUp" data-wow-delay="0.2s">
+                  <div class="icon-box">
+                    <img src="images/icon-about-body-item-1.svg" alt="" />
+                  </div>
+                  <div class="about-body-list-content">
+                    <h3>Food delivery</h3>
+                    <p>
+                      With our fast and reliable food delivery service, your
+                      favorite coffee, snacks, and treats are just a click away.
+                    </p>
+                  </div>
+                </div>
+                <!-- About Body Item End -->
+
+                <!-- About Body Item Start -->
+                <div class="about-body-item wow fadeInUp" data-wow-delay="0.4s">
+                  <div class="icon-box">
+                    <img src="images/icon-about-body-item-2.svg" alt="" />
+                  </div>
+                  <div class="about-body-list-content">
+                    <h3>Event elegance</h3>
+                    <p>
+                      Host your special moments with us! From intimate
+                      gatherings to vibrant celebrations offers.
+                    </p>
+                  </div>
+                </div>
+                <!-- About Body Item End -->
+              </div>
+              <!-- About Body List End -->
+
+              <!-- About Us Footer Start -->
+              <div class="about-us-footer wow fadeInUp" data-wow-delay="0.6s">
+                <!-- About Button Start -->
+                <div class="about-btn">
+                  <a href="about.html" class="btn-default">More about us</a>
+                </div>
+                <!-- About Button End -->
+
+                <!-- Video Play Button Start -->
+                <div class="video-play-button">
+                  <a
+                    href="https://www.youtube.com/watch?v=Y-x0efG1seA"
+                    class="popup-video"
+                    data-cursor-text="Play"
+                  >
+                    <i class="fa-solid fa-play"></i>
+                  </a>
+                  <p>watch video</p>
+                </div>
+                <!-- Video Play Button End -->
+              </div>
+              <!-- About Us Footer End -->
+            </div>
+            <!-- About us Content End -->
+          </div>
+
+          <div class="col-lg-6">
+            <!-- About Us Image Start -->
+            <div class="about-us-image">
+              <!-- About Us Image Start -->
+              <div class="about-us-img">
+                <figure class="image-anime">
+                  <img src="images/about-us-image.jpg" alt="" />
+                </figure>
+              </div>
+              <!-- About Us Image End -->
+
+              <!-- Opening Time Box Start -->
+              <div class="opening-time-box">
+                <!-- Icon Box Start -->
+                <div class="icon-box">
+                  <i class="fa-regular fa-clock"></i>
+                </div>
+                <!-- Icon Box End -->
+
+                <!-- Opening Time Content Start -->
+                <div class="opening-time-content">
+                  <h3>Open hours</h3>
+                  <ul>
+                    <li>Sunday - Thursday<span>8:00am - 12:00pm</span></li>
+                    <li>Friday - Saturday <span>8:00am - 1:00am</span></li>
+                  </ul>
+                </div>
+                <!-- Opening Time Content End -->
+              </div>
+              <!-- About Menu Box End -->
+            </div>
+            <!-- Opening Time Box End -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About us Section End -->
+
+    <!-- Why Choose Us Section Start -->
+    <div class="why-choose-us light-bg-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- Why Choose Content Start -->
+            <div class="why-choose-content">
+              <!-- Section Title Start -->
+              <div class="section-title">
+                <h3 class="wow fadeInUp">why choose us</h3>
+                <h2 class="text-anime-style-3" data-cursor="-opaque">
+                  Where flavor meets comfort and services
+                </h2>
+              </div>
+              <!-- Section Title End -->
+
+              <!-- Why Choose Button Start -->
+              <div class="why-choose-btn wow fadeInUp" data-wow-delay="0.2s">
+                <a href="contact.html" class="btn-default">contact us</a>
+              </div>
+              <!-- Why Choose Button End -->
+            </div>
+            <!-- Why Choose Content End -->
+          </div>
+
+          <div class="col-lg-6">
+            <!-- Why Choose List Start -->
+            <div class="why-choose-list wow fadeInUp" data-wow-delay="0.2s">
+              <!-- Why Choose Item Start -->
+              <div class="why-choose-item">
+                <div class="icon-box">
+                  <img src="images/icon-why-choose-1.svg" alt="" />
+                </div>
+                <div class="why-choose-item-content">
+                  <h3>fully responsive</h3>
+                  <p>
+                    Designed to reduce allergens, dust, and pollutants, these
+                    systems create a healthier.
+                  </p>
+                </div>
+              </div>
+              <!-- Why Choose Item End -->
+
+              <!-- Why Choose Item Start -->
+              <div class="why-choose-item">
+                <div class="icon-box">
+                  <img src="images/icon-why-choose-2.svg" alt="" />
+                </div>
+                <div class="why-choose-item-content">
+                  <h3>fresh ingredients</h3>
+                  <p>
+                    Designed to reduce allergens, dust, and pollutants, these
+                    systems create a healthier.
+                  </p>
+                </div>
+              </div>
+              <!-- Why Choose Item End -->
+
+              <!-- Why Choose Item Start -->
+              <div class="why-choose-item">
+                <div class="icon-box">
+                  <img src="images/icon-why-choose-3.svg" alt="" />
+                </div>
+                <div class="why-choose-item-content">
+                  <h3>exclusive chef's</h3>
+                  <p>
+                    Designed to reduce allergens, dust, and pollutants, these
+                    systems create a healthier.
+                  </p>
+                </div>
+              </div>
+              <!-- Why Choose Item End -->
+
+              <!-- Why Choose Item Start -->
+              <div class="why-choose-item">
+                <div class="icon-box">
+                  <img src="images/icon-why-choose-4.svg" alt="" />
+                </div>
+                <div class="why-choose-item-content">
+                  <h3>fast services</h3>
+                  <p>
+                    Designed to reduce allergens, dust, and pollutants, these
+                    systems create a healthier.
+                  </p>
+                </div>
+              </div>
+              <!-- Why Choose Item End -->
+
+              <!-- Why Choose Item Start -->
+              <div class="why-choose-item">
+                <div class="icon-box">
+                  <img src="images/icon-why-choose-5.svg" alt="" />
+                </div>
+                <div class="why-choose-item-content">
+                  <h3>friendly atmosphere</h3>
+                  <p>
+                    Designed to reduce allergens, dust, and pollutants, these
+                    systems create a healthier.
+                  </p>
+                </div>
+              </div>
+              <!-- Why Choose Item End -->
+
+              <!-- Why Choose Item Start -->
+              <div class="why-choose-item">
+                <div class="icon-box">
+                  <img src="images/icon-why-choose-6.svg" alt="" />
+                </div>
+                <div class="why-choose-item-content">
+                  <h3>Free WIFI</h3>
+                  <p>
+                    Designed to reduce allergens, dust, and pollutants, these
+                    systems create a healthier.
+                  </p>
+                </div>
+              </div>
+              <!-- Why Choose Item End -->
+            </div>
+            <!-- Why Choose List End -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Why Choose Us Section End -->
+
+    <!-- Intro Video Section Start -->
+    <div class="intro-video parallaxie">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-8">
+            <!-- Intro Video Content Start -->
+            <div class="intro-video-content">
+              <!-- Section Title Start -->
+              <div class="section-title">
+                <h3 class="wow fadeInUp">our journey of success</h3>
+                <h2 class="text-anime-style-3" data-cursor="-opaque">
+                  Our coffee adventure, your favorite place
+                </h2>
+              </div>
+              <!-- Section Title End -->
+            </div>
+            <!-- Intro Video Content End -->
+          </div>
+
+          <div class="col-lg-6 col-md-4">
+            <!-- Intro Video Box Start -->
+            <div
+              class="intro-video-box about-intro-video wow fadeInUp"
+              data-wow-delay="0.2s"
+            >
+              <!-- Video Play Button Start -->
+              <div class="video-play-button">
+                <a
+                  href="https://www.youtube.com/watch?v=RGVE4x2WrSI"
+                  class="popup-video"
+                  data-cursor-text="Play"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </a>
+                <p>watch video</p>
+              </div>
+              <!-- Video Play Button End -->
+            </div>
+            <!-- Intro Video Box End -->
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Intro Video Counters Start -->
+            <div class="intro-video-counters">
+              <!-- Video Counter Item Start -->
+              <div class="video-counter-item">
+                <div class="icon-box">
+                  <img src="images/icon-intro-video-counter-1.svg" alt="" />
+                </div>
+                <div class="video-counter-content">
+                  <h2><span class="counter">300</span>+</h2>
+                  <p>daily visitors</p>
+                </div>
+              </div>
+              <!-- Video Counter Item End -->
+
+              <!-- Video Counter Item Start -->
+              <div class="video-counter-item">
+                <div class="icon-box">
+                  <img src="images/icon-intro-video-counter-2.svg" alt="" />
+                </div>
+                <div class="video-counter-content">
+                  <h2><span class="counter">50</span></h2>
+                  <p>recipe created</p>
+                </div>
+              </div>
+              <!-- Video Counter Item End -->
+
+              <!-- Video Counter Item Start -->
+              <!-- <div class="video-counter-item">
+                <div class="icon-box">
+                  <img src="images/icon-intro-video-counter-3.svg" alt="" />
+                </div>
+                <div class="video-counter-content">
+                  <h2><span class="counter">120</span>+</h2>
+                  <p>events hosted</p>
+                </div>
+              </div> -->
+              <!-- Video Counter Item End -->
+
+              <!-- Video Counter Item Start -->
+              <div class="video-counter-item">
+                <div class="icon-box">
+                  <img src="images/icon-intro-video-counter-4.svg" alt="" />
+                </div>
+                <div class="video-counter-content">
+                  <h2><span class="counter">+1000</span>+</h2>
+                  <p>happy customer</p>
+                </div>
+              </div>
+              <!-- Video Counter Item End -->
+            </div>
+            <!-- Intro Video Counters End -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Intro Video Section End -->
+
+    <!-- Our Pricing Section Start -->
+    <div class="our-pricing">
+      <div class="container">
+        <div class="row section-row">
+          <div class="col-lg-12">
+            <!-- Section Title Start -->
+            <div class="section-title">
+              <h3 class="wow fadeInUp">Our pricing</h3>
+              <h2 class="text-anime-style-3" data-cursor="-opaque">
+                Savor every moment, without the premium price
+              </h2>
+            </div>
+            <!-- Section Title End -->
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="our-pricing-box tab-content" id="pricingtab">
+              <!-- Sidebar Our Support Nav start -->
+              <div class="our-support-nav wow fadeInUp" data-wow-delay="0.2s">
+                <ul class="nav nav-tabs" id="mvTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="btn-default btn-highlighted active"
+                      id="all-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#all"
+                      type="button"
+                      role="tab"
+                      aria-selected="true"
+                    >
+                      All Menu
+                    </button>
+                  </li>
+                  <!-- <li class="nav-item" role="presentation">
+                    <button
+                      class="btn-default btn-highlighted"
+                      id="see-food-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#see-food"
+                      type="button"
+                      role="tab"
+                      aria-selected="false"
+                    >
+                      See food
+                    </button>
+                  </li> -->
+
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="btn-default btn-highlighted"
+                      id="yemeni-coffee-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#yemeni-coffee"
+                      type="button"
+                      role="tab"
+                      aria-selected="true"
+                    >
+                      Yemeni Coffee
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="btn-default btn-highlighted"
+                      id="hot-drinks-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#hot-drinks"
+                      type="button"
+                      role="tab"
+                      aria-selected="false"
+                    >
+                      Hot Drinks
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="btn-default btn-highlighted"
+                      id="cold-drinks-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#cold-drinks"
+                      type="button"
+                      role="tab"
+                      aria-selected="false"
+                    >
+                      Cold Drinks
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="btn-default btn-highlighted"
+                      id="desserts-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#desserts"
+                      type="button"
+                      role="tab"
+                      aria-selected="false"
+                    >
+                      Pastries
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <!-- Sidebar Our Support Nav End -->
+
+              <!-- Pricing Boxes Start -->
+              <div
+                class="pricing-boxes tab-pane fade show active"
+                id="all"
+                role="tabpanel"
+              >
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <!-- Pricing Image Start -->
+                    <div class="pricing-image">
+                      <figure class="image-anime">
+                        <img src="images/pricing-tab-image-1.jpg" alt="" />
+                      </figure>
+                    </div>
+                    <!-- Pricing Image End -->
+                  </div>
+
+                  <div class="col-lg-6">
+                    <!-- Our Menu List Start -->
+                    <div class="our-menu-list">
+                      <!-- Our Menu Item Start -->
+                      <!-- Pricing Information Start -->
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <p
+                            class="wow fadeInUp size-pricing"
+                            data-wow-delay="0.1s"
+                          >
+                            <span>
+                              <!-- <i class="fas fa-coffee"></i> -->
+                              <span class="price-item">
+                                <i class="fas fa-mug-hot"></i>
+                                <span class="size">12oz</span>
+                                <span class="price">$3.99</span>
+                              </span>
+                              <span class="price-item">
+                                <i class="fas fa-mug-hot"></i>
+                                <span class="size">16oz</span>
+                                <span class="price">$4.99</span>
+                              </span>
+                              <br />
+                              <span class="price-item">
+                                <i class="fas fa-coffee-pot"></i>
+                                <span class="size">Small Pot (16oz)</span>
+                                <span class="price">$8.99</span>
+                              </span>
+                              <span class="price-item">
+                                <i class="fas fa-coffee-pot"></i>
+                                <span class="size">Medium Pot (24oz)</span>
+                                <span class="price">$11.99</span>
+                              </span>
+                              <span class="price-item">
+                                <i class="fas fa-coffee-pot"></i>
+                                <span class="size">Large Pot (38oz)</span>
+                                <span class="price">$15.99</span>
+                              </span>
+                              <br />
+                              <span class="price-item">
+                                <i class="fas fa-shopping-bag"></i>
+                                <span class="size">To Go Pot (48oz)</span>
+                                <span class="price">$23.99</span>
+                              </span>
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                      <!-- Pricing Information End -->
+
+                      <div class="menu-list-item">
+                        <!-- Our Menu Image Start -->
+                        <div class="menu-list-image">
+                          <figure>
+                            <img src="images/pricing-menu-1.png" alt="" />
+                          </figure>
+                        </div>
+                        <!-- Our Menu Image End -->
+
+                        <!-- Menu Item Body Start -->
+                        <div class="menu-item-body">
+                          <!-- Menu Item Title Start -->
+                          <div class="menu-item-title">
+                            <h3>Mofawar</h3>
+                            <hr />
+                            <span>$3.99 - $23.99</span>
+                          </div>
+                          <!-- Menu Item Title End -->
+
+                          <!-- Menu Item Content Start -->
+                          <div class="menu-item-content">
+                            <p>Medium roast with cardamom & cream.</p>
+                          </div>
+                          <!-- Menu Item Content End -->
+                        </div>
+                        <!-- Menu Item Body End -->
+                      </div>
+
+                      <!-- Our Menu Item Start -->
+                      <div class="menu-list-item">
+                        <!-- Our Menu Image Start -->
+                        <div class="menu-list-image">
+                          <figure>
+                            <img src="images/pricing-menu-2.png" alt="" />
+                          </figure>
+                        </div>
+                        <!-- Our Menu Image End -->
+
+                        <!-- Menu Item Body Start -->
+                        <div class="menu-item-body">
+                          <!-- Menu Item Title Start -->
+                          <div class="menu-item-title">
+                            <h3>Sana'ani</h3>
+                            <hr />
+                            <span>$3.99 - $23.99</span>
+                          </div>
+                          <!-- Menu Item Title End -->
+
+                          <!-- Menu Item Content Start -->
+                          <div class="menu-item-content">
+                            <p>
+                              Medium roast with cardamom. Traditional Yemeni
+                              coffee with aromatic cardamom spices.
+                            </p>
+                          </div>
+                          <!-- Our Menu Item End -->
+                          <!-- Menu Item Content End -->
+                        </div>
+                        <!-- Menu Item Body End -->
+                      </div>
+                      <!-- Our Menu Item End -->
+
+                      <!-- Our Menu Item Start -->
+                      <div class="menu-list-item">
+                        <!-- Our Menu Image Start -->
+                        <div class="menu-list-image">
+                          <figure>
+                            <img src="images/pricing-menu-3.png" alt="" />
+                          </figure>
+                        </div>
+                        <!-- Our Menu Image End -->
+
+                        <!-- Menu Item Body Start -->
+                        <div class="menu-item-body">
+                          <!-- Menu Item Title Start -->
+                          <div class="menu-item-title">
+                            <h3>Jubani</h3>
+                            <hr />
+                            <span>$3.99 - $23.99</span>
+                          </div>
+                          <!-- Menu Item Title End -->
+
+                          <!-- Menu Item Content Start -->
+                          <div class="menu-item-content">
+                            <p>
+                              Medium-light roast coffee husks with cardamom,
+                              ginger & cinnamon. A unique blend of traditional
+                              spices.
+                            </p>
+                          </div>
+                          <!-- Menu Item Content End -->
+                        </div>
+                        <!-- Menu Item Body End -->
+                      </div>
+                      <!-- Our Menu Item End -->
+
+                      <!-- Our Menu Item Start -->
+                      <div class="menu-list-item">
+                        <!-- Our Menu Image Start -->
+                        <div class="menu-list-image">
+                          <figure>
+                            <img src="images/pricing-menu-4.png" alt="" />
+                          </figure>
+                        </div>
+                        <!-- Our Menu Image End -->
+
+                        <!-- Menu Item Body Start -->
+                        <div class="menu-item-body">
+                          <!-- Menu Item Title Start -->
+                          <div class="menu-item-title">
+                            <h3>Qishr</h3>
+                            <hr />
+                            <span>$3.99 - $23.99</span>
+                          </div>
+                          <!-- Menu Item Title End -->
+
+                          <!-- Menu Item Content Start -->
+                          <div class="menu-item-content">
+                            <p>
+                              Coffee husks (cascara) with ginger & cinnamon. A
+                              caffeine-free alternative with warming spices.
+                            </p>
+                          </div>
+                          <!-- Menu Item Content End -->
+                        </div>
+                        <!-- Menu Item Body End -->
+                      </div>
+                      <!-- Our Menu Item End -->
+                    </div>
+                    <!-- Our Menu List End -->
+                  </div>
+                </div>
+              </div>
+              <!-- Pricing Boxes End -->
+
+              <!-- Pricing Boxes Start -->
+              <div
+                class="pricing-boxes tab-pane fade"
+                id="yemeni-coffee"
+                role="tabpanel"
+              >
+                <div class="row">
+                  <div class="col-lg-12">
+                    <p class="wow fadeInUp size-pricing" data-wow-delay="0.1s">
+                      <span>
+                        <i class="fas fa-coffee"></i>
+                        <span class="price-item">
+                          <i class="fas fa-mug-hot"></i>
+                          <span class="size">12oz</span>
+                          <span class="price">$3.99</span>
+                        </span>
+                        <span class="price-item">
+                          <i class="fas fa-mug-hot"></i>
+                          <span class="size">16oz</span>
+                          <span class="price">$4.99</span>
+                        </span>
+                        <span class="price-item">
+                          <i class="fas fa-coffee-pot"></i>
+                          <i class="fa-solid fa-coffee-pot"></i>
+                          <span class="size">Small Pot (16oz)</span>
+                          <span class="price">$8.99</span>
+                        </span>
+                        <span class="price-item">
+                          <i class="fas fa-coffee-pot"></i>
+                          <span class="size">Medium Pot (24oz)</span>
+                          <span class="price">$11.99</span>
+                        </span>
+                        <span class="price-item">
+                          <i class="fas fa-coffee-pot"></i>
+                          <span class="size">Large Pot (38oz)</span>
+                          <span class="price">$15.99</span>
+                        </span>
+                        <span class="price-item">
+                          <i class="fas fa-shopping-bag"></i>
+                          <span class="size">To Go Pot (48oz)</span>
+                          <span class="price">$23.99</span>
+                        </span>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <!-- Pricing Image Start -->
+                    <div class="pricing-image">
+                      <figure class="image-anime">
+                        <img src="images/pricing-tab-image-2.jpg" alt="" />
+                      </figure>
+                    </div>
+                    <!-- Pricing Image End -->
+                  </div>
+
+                  <div class="col-lg-6">
+                    <!-- Our Menu List Start -->
+                    <div class="our-menu-list">
+                      <!-- Our Menu Item Start -->
+                      <div class="menu-list-item">
+                        <!-- Our Menu Image Start -->
+                        <div class="menu-list-image">
+                          <figure>
+                            <img src="images/pricing-menu-1.png" alt="" />
+                          </figure>
+                        </div>
+                        <!-- Our Menu Image End -->
+
+                        <!-- Menu Item Body Start -->
+                        <div class="menu-item-body">
+                          <!-- Menu Item Title Start -->
+                          <div class="menu-item-title">
+                            <h3>Rada'ey</h3>
+                            <hr />
+                            <span>$3.99 - $23.99</span>
+                          </div>
+                          <!-- Menu Item Title End -->
+
+                          <!-- Menu Item Content Start -->
+                          <div class="menu-item-content">
+                            <p>
+                              Light roast with ginger & cardamom. A delicate
+                              blend perfect for those who prefer milder coffee.
+                            </p>
+                          </div>
+                          <!-- Menu Item Content End -->
+                        </div>
+                        <!-- Menu Item Body End -->
+                      </div>
+
+                      <!-- Our Menu Item Start -->
+                      <div class="menu-list-item">
+                        <!-- Our Menu Image Start -->
+                        <div class="menu-list-image">
+                          <figure>
+                            <img src="images/pricing-menu-2.png" alt="" />
+                          </figure>
+                        </div>
+                        <!-- Our Menu Image End -->
+
+                        <!-- Menu Item Body Start -->
+                        <div class="menu-item-body">
+                          <!-- Menu Item Title Start -->
+                          <div class="menu-item-title">
+                            <h3>Adeni Chai</h3>
+                            <hr />
+                            <span>$3.99 - $23.99</span>
+                          </div>
+                          <!-- Menu Item Title End -->
+
+                          <!-- Menu Item Content Start -->
+                          <div class="menu-item-content">
+                            <p>
+                              Yemeni black tea, cardamom, nutmeg & milk. A
+                              traditional Yemeni tea blend with warming spices.
+                            </p>
+                          </div>
+                          <!-- Our Menu Item End -->
+                          <!-- Menu Item Content End -->
+                        </div>
+                        <!-- Menu Item Body End -->
+                      </div>
+                      <!-- Our Menu Item End -->
+
+                      <!-- Our Menu Item Start -->
+                      <div class="menu-list-item">
+                        <!-- Our Menu Image Start -->
+                        <div class="menu-list-image">
+                          <figure>
+                            <img src="images/pricing-menu-3.png" alt="" />
+                          </figure>
+                        </div>
+                        <!-- Our Menu Image End -->
+
+                        <!-- Menu Item Body Start -->
+                        <div class="menu-item-body">
+                          <!-- Menu Item Title Start -->
+                          <div class="menu-item-title">
+                            <h3>Yemeni Tea</h3>
+                            <hr />
+                            <span>$3.99 - $23.99</span>
+                          </div>
+                          <!-- Menu Item Title End -->
+
+                          <!-- Menu Item Content Start -->
+                          <div class="menu-item-content">
+                            <p>
+                              Yemeni black tea, cardamom, cinnamon & cloves. A
+                              rich and aromatic tea experience.
+                            </p>
+                          </div>
+                          <!-- Menu Item Content End -->
+                        </div>
+                        <!-- Menu Item Body End -->
+                      </div>
+                      <!-- Our Menu Item End -->
+
+                      <!-- Our Menu Item Start -->
+                      <div class="menu-list-item">
+                        <!-- Our Menu Image Start -->
+                        <div class="menu-list-image">
+                          <figure>
+                            <img src="images/pricing-menu-4.png" alt="" />
+                          </figure>
+                        </div>
+                        <!-- Our Menu Image End -->
+
+                        <!-- Menu Item Body Start -->
+                        <div class="menu-item-body">
+                          <!-- Menu Item Title Start -->
+                          <div class="menu-item-title">
+                            <h3>Turkish Dark Roast</h3>
+                            <hr />
+                            <span>$3.99</span>
+                          </div>
+                          <!-- Menu Item Title End -->
+
+                          <!-- Menu Item Content Start -->
+                          <div class="menu-item-content">
+                            <p>
+                              Traditional Turkish coffee preparation with rich,
+                              bold flavors and authentic brewing method.
+                            </p>
+                          </div>
+                          <!-- Menu Item Content End -->
+                        </div>
+                        <!-- Menu Item Body End -->
+                      </div>
+                      <!-- Our Menu Item End -->
+                    </div>
+                    <!-- Our Menu List End -->
+                  </div>
+                </div>
+              </div>
+              <!-- Pricing Boxes End -->
+
+              <!-- Pricing Boxes Start -->
+              <div
+                class="pricing-boxes tab-pane fade"
+                id="hot-drinks"
+                role="tabpanel"
+              >
+                <div class="row">
+                  <div class="col-lg-12">
+                    <p class="wow fadeInUp size-pricing" data-wow-delay="0.1s">
+                      <span>
+                        <i class="fas fa-coffee"></i>
+                        <span class="price-item">
+                          <i class="fas fa-mug-hot"></i>
+                          <span class="size">12oz</span>
+                          <span class="price">$3.99</span>
+                        </span>
+                        <span class="price-item">
+                          <i class="fas fa-mug-hot"></i>
+                          <span class="size">16oz</span>
+                          <span class="price">$4.99</span>
+                        </span>
+                        <span class="price-item">
+                          <i class="fas fa-coffee-pot"></i>
+                          <span class="size">Small Pot (16oz)</span>
+                          <span class="price">$8.99</span>
+                        </span>
+                        <span class="price-item">
+                          <i class="fas fa-coffee-pot"></i>
+                          <span class="size">Medium Pot (24oz)</span>
+                          <span class="price">$11.99</span>
+                        </span>
+                        <span class="price-item">
+                          <i class="fas fa-coffee-pot"></i>
+                          <span class="size">Large Pot (38oz)</span>
+                          <span class="price">$15.99</span>
+                        </span>
+                        <span class="price-item">
+                          <i class="fas fa-shopping-bag"></i>
+                          <span class="size">To Go Pot (48oz)</span>
+                          <span class="price">$23.99</span>
+                        </span>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <!-- Pricing Image Start -->
+                    <div class="pricing-image">
+                      <figure class="image-anime">
+                        <img src="images/pricing-tab-image-3.jpg" alt="" />
+                      </figure>
+                    </div>
+                    <!-- Pricing Image End -->
+                  </div>
+
+                  <div class="col-lg-6">
+                    <!-- Our Menu List Start -->
+                    <div class="our-menu-list">
+                      <!-- Our Menu Item Start -->
+                      <div class="menu-list-item">
+                        <!-- Our Menu Image Start -->
+                        <div class="menu-list-image">
+                          <figure>
+                            <img src="images/pricing-menu-1.png" alt="" />
+                          </figure>
+                        </div>
+                        <!-- Our Menu Image End -->
+
+                        <!-- Menu Item Body Start -->
+                        <div class="menu-item-body">
+                          <!-- Menu Item Title Start -->
+                          <div class="menu-item-title">
+                            <h3>Espresso (Shot)</h3>
+                            <hr />
+                            <span>$4.49</span>
+                          </div>
+                          <!-- Menu Item Title End -->
+
+                          <!-- Menu Item Content Start -->
+                          <div class="menu-item-content">
+                            <p>
+                              Pure, concentrated coffee shot with rich, bold
+                              flavors and perfect crema.
+                            </p>
+                          </div>
+                          <!-- Menu Item Content End -->
+                        </div>
+                        <!-- Menu Item Body End -->
+                      </div>
+
+                      <!-- Our Menu Item Start -->
+                      <div class="menu-list-item">
+                        <!-- Our Menu Image Start -->
+                        <div class="menu-list-image">
+                          <figure>
+                            <img src="images/pricing-menu-2.png" alt="" />
+                          </figure>
+                        </div>
+                        <!-- Our Menu Image End -->
+
+                        <!-- Menu Item Body Start -->
+                        <div class="menu-item-body">
+                          <!-- Menu Item Title Start -->
+                          <div class="menu-item-title">
+                            <h3>Americano</h3>
+                            <hr />
+                            <span>$4.99</span>
+                          </div>
+                          <!-- Menu Item Title End -->
+
+                          <!-- Menu Item Content Start -->
+                          <div class="menu-item-content">
+                            <p>
+                              Espresso with hot water for a smooth, clean coffee
+                              experience.
+                            </p>
+                          </div>
+                          <!-- Our Menu Item End -->
+                          <!-- Menu Item Content End -->
+                        </div>
+                        <!-- Menu Item Body End -->
+                      </div>
+                      <!-- Our Menu Item End -->
+
+                      <!-- Our Menu Item Start -->
+                      <div class="menu-list-item">
+                        <!-- Our Menu Image Start -->
+                        <div class="menu-list-image">
+                          <figure>
+                            <img src="images/pricing-menu-3.png" alt="" />
+                          </figure>
+                        </div>
+                        <!-- Our Menu Image End -->
+
+                        <!-- Menu Item Body Start -->
+                        <div class="menu-item-body">
+                          <!-- Menu Item Title Start -->
+                          <div class="menu-item-title">
+                            <h3>Latte</h3>
+                            <hr />
+                            <span>$5.49</span>
+                          </div>
+                          <!-- Menu Item Title End -->
+
+                          <!-- Menu Item Content Start -->
+                          <div class="menu-item-content">
+                            <p>
+                              Espresso with steamed milk and a light layer of
+                              foam for a creamy, smooth drink.
+                            </p>
+                          </div>
+                          <!-- Menu Item Content End -->
+                        </div>
+                        <!-- Menu Item Body End -->
+                      </div>
+                      <!-- Our Menu Item End -->
+
+                      <!-- Our Menu Item Start -->
+                      <div class="menu-list-item">
+                        <!-- Our Menu Image Start -->
+                        <div class="menu-list-image">
+                          <figure>
+                            <img src="images/pricing-menu-4.png" alt="" />
+                          </figure>
+                        </div>
+                        <!-- Our Menu Image End -->
+
+                        <!-- Menu Item Body Start -->
+                        <div class="menu-item-body">
+                          <!-- Menu Item Title Start -->
+                          <div class="menu-item-title">
+                            <h3>Mazajj Latte</h3>
+                            <hr />
+                            <span>$5.99</span>
+                          </div>
+                          <!-- Menu Item Title End -->
+
+                          <!-- Menu Item Content Start -->
+                          <div class="menu-item-content">
+                            <p>
+                              Our signature latte with a special blend of spices
+                              and flavors unique to Mazajj.
+                            </p>
+                          </div>
+                          <!-- Menu Item Content End -->
+                        </div>
+                        <!-- Menu Item Body End -->
+                      </div>
+                      <!-- Our Menu Item End -->
+                    </div>
+                    <!-- Our Menu List End -->
+                  </div>
+                </div>
+              </div>
+              <!-- Pricing Boxes End -->
+
+              <!-- Pricing Boxes Start -->
+              <div
+                class="pricing-boxes tab-pane fade"
+                id="cold-drinks"
+                role="tabpanel"
+              >
+                <div class="row">
+                  <div class="col-lg-12">
+                    <p class="wow fadeInUp size-pricing" data-wow-delay="0.1s">
+                      <span>
+                        <i class="fas fa-coffee"></i>
+                        <span class="price-item">
+                          <i class="fas fa-mug-hot"></i>
+                          <span class="size">12oz</span>
+                          <span class="price">$3.99</span>
+                        </span>
+                        <span class="price-item">
+                          <i class="fas fa-mug-hot"></i>
+                          <span class="size">16oz</span>
+                          <span class="price">$4.99</span>
+                        </span>
+                        <span class="price-item">
+                          <i class="fas fa-coffee-pot"></i>
+                          <span class="size">Small Pot (16oz)</span>
+                          <span class="price">$8.99</span>
+                        </span>
+                        <span class="price-item">
+                          <i class="fas fa-coffee-pot"></i>
+                          <span class="size">Medium Pot (24oz)</span>
+                          <span class="price">$11.99</span>
+                        </span>
+                        <span class="price-item">
+                          <i class="fas fa-coffee-pot"></i>
+                          <span class="size">Large Pot (38oz)</span>
+                          <span class="price">$15.99</span>
+                        </span>
+                        <span class="price-item">
+                          <i class="fas fa-shopping-bag"></i>
+                          <span class="size">To Go Pot (48oz)</span>
+                          <span class="price">$23.99</span>
+                        </span>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <!-- Pricing Image Start -->
+                    <div class="pricing-image">
+                      <figure class="image-anime">
+                        <img src="images/pricing-tab-image-4.jpg" alt="" />
+                      </figure>
+                    </div>
+                    <!-- Pricing Image End -->
+                  </div>
+
+                  <div class="col-lg-6">
+                    <!-- Our Menu List Start -->
+                    <div class="our-menu-list">
+                      <!-- Our Menu Item Start -->
+                      <div class="menu-list-item">
+                        <!-- Our Menu Image Start -->
+                        <div class="menu-list-image">
+                          <figure>
+                            <img src="images/pricing-menu-1.png" alt="" />
+                          </figure>
+                        </div>
+                        <!-- Our Menu Image End -->
+
+                        <!-- Menu Item Body Start -->
+                        <div class="menu-item-body">
+                          <!-- Menu Item Title Start -->
+                          <div class="menu-item-title">
+                            <h3>Iced Americano</h3>
+                            <hr />
+                            <span>$5.49</span>
+                          </div>
+                          <!-- Menu Item Title End -->
+
+                          <!-- Menu Item Content Start -->
+                          <div class="menu-item-content">
+                            <p>
+                              Espresso with cold water and ice for a refreshing,
+                              bold coffee experience.
+                            </p>
+                          </div>
+                          <!-- Menu Item Content End -->
+                        </div>
+                        <!-- Menu Item Body End -->
+                      </div>
+
+                      <!-- Our Menu Item Start -->
+                      <div class="menu-list-item">
+                        <!-- Our Menu Image Start -->
+                        <div class="menu-list-image">
+                          <figure>
+                            <img src="images/pricing-menu-2.png" alt="" />
+                          </figure>
+                        </div>
+                        <!-- Our Menu Image End -->
+
+                        <!-- Menu Item Body Start -->
+                        <div class="menu-item-body">
+                          <!-- Menu Item Title Start -->
+                          <div class="menu-item-title">
+                            <h3>Iced Latte</h3>
+                            <hr />
+                            <span>$5.99</span>
+                          </div>
+                          <!-- Menu Item Title End -->
+
+                          <!-- Menu Item Content Start -->
+                          <div class="menu-item-content">
+                            <p>
+                              Espresso with cold milk and ice for a smooth,
+                              creamy cold coffee drink.
+                            </p>
+                          </div>
+                          <!-- Our Menu Item End -->
+                          <!-- Menu Item Content End -->
+                        </div>
+                        <!-- Menu Item Body End -->
+                      </div>
+                      <!-- Our Menu Item End -->
+
+                      <!-- Our Menu Item Start -->
+                      <div class="menu-list-item">
+                        <!-- Our Menu Image Start -->
+                        <div class="menu-list-image">
+                          <figure>
+                            <img src="images/pricing-menu-3.png" alt="" />
+                          </figure>
+                        </div>
+                        <!-- Our Menu Image End -->
+
+                        <!-- Menu Item Body Start -->
+                        <div class="menu-item-body">
+                          <!-- Menu Item Title Start -->
+                          <div class="menu-item-title">
+                            <h3>Iced Mazajj Latte</h3>
+                            <hr />
+                            <span>$6.49</span>
+                          </div>
+                          <!-- Menu Item Title End -->
+
+                          <!-- Menu Item Content Start -->
+                          <div class="menu-item-content">
+                            <p>
+                              Our signature iced latte with special spices and
+                              flavors unique to Mazajj.
+                            </p>
+                          </div>
+                          <!-- Menu Item Content End -->
+                        </div>
+                        <!-- Menu Item Body End -->
+                      </div>
+                      <!-- Our Menu Item End -->
+
+                      <!-- Our Menu Item Start -->
+                      <div class="menu-list-item">
+                        <!-- Our Menu Image Start -->
+                        <div class="menu-list-image">
+                          <figure>
+                            <img src="images/pricing-menu-4.png" alt="" />
+                          </figure>
+                        </div>
+                        <!-- Our Menu Image End -->
+
+                        <!-- Menu Item Body Start -->
+                        <div class="menu-item-body">
+                          <!-- Menu Item Title Start -->
+                          <div class="menu-item-title">
+                            <h3>Iced Chocolate</h3>
+                            <hr />
+                            <span>$4.99</span>
+                          </div>
+                          <!-- Menu Item Title End -->
+
+                          <!-- Menu Item Content Start -->
+                          <div class="menu-item-content">
+                            <p>
+                              Rich chocolate with cold milk and ice for a
+                              decadent cold chocolate drink.
+                            </p>
+                          </div>
+                          <!-- Menu Item Content End -->
+                        </div>
+                        <!-- Menu Item Body End -->
+                      </div>
+                      <!-- Our Menu Item End -->
+                    </div>
+                    <!-- Our Menu List End -->
+                  </div>
+                </div>
+              </div>
+              <!-- Pricing Boxes End -->
+
+              <!-- Pricing Boxes Start -->
+              <div
+                class="pricing-boxes tab-pane fade"
+                id="desserts"
+                role="tabpanel"
+              >
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <!-- Pricing Image Start -->
+                    <div class="pricing-image">
+                      <figure class="image-anime">
+                        <img src="images/pricing-tab-image-3.jpg" alt="" />
+                      </figure>
+                    </div>
+                    <!-- Pricing Image End -->
+                  </div>
+
+                  <div class="col-lg-6">
+                    <!-- Our Menu List Start -->
+                    <div class="our-menu-list">
+                      <!-- Our Menu Item Start -->
+                      <div class="menu-list-item">
+                        <!-- Our Menu Image Start -->
+                        <div class="menu-list-image">
+                          <figure>
+                            <img src="images/pricing-menu-1.png" alt="" />
+                          </figure>
+                        </div>
+                        <!-- Our Menu Image End -->
+
+                        <!-- Menu Item Body Start -->
+                        <div class="menu-item-body">
+                          <!-- Menu Item Title Start -->
+                          <div class="menu-item-title">
+                            <h3>Honeycomb Slice</h3>
+                            <hr />
+                            <span>$5.99</span>
+                          </div>
+                          <!-- Menu Item Title End -->
+
+                          <!-- Menu Item Content Start -->
+                          <div class="menu-item-content">
+                            <p>
+                              Delicious honeycomb slice with rich, sweet flavors
+                              and perfect texture.
+                            </p>
+                          </div>
+                          <!-- Menu Item Content End -->
+                        </div>
+                        <!-- Menu Item Body End -->
+                      </div>
+
+                      <!-- Our Menu Item Start -->
+                      <div class="menu-list-item">
+                        <!-- Our Menu Image Start -->
+                        <div class="menu-list-image">
+                          <figure>
+                            <img src="images/pricing-menu-2.png" alt="" />
+                          </figure>
+                        </div>
+                        <!-- Our Menu Image End -->
+
+                        <!-- Menu Item Body Start -->
+                        <div class="menu-item-body">
+                          <!-- Menu Item Title Start -->
+                          <div class="menu-item-title">
+                            <h3>Croissants</h3>
+                            <hr />
+                            <span>$5.99</span>
+                          </div>
+                          <!-- Menu Item Title End -->
+
+                          <!-- Menu Item Content Start -->
+                          <div class="menu-item-content">
+                            <p>
+                              Buttery, flaky croissants baked fresh daily with
+                              perfect golden crust.
+                            </p>
+                          </div>
+                          <!-- Our Menu Item End -->
+                          <!-- Menu Item Content End -->
+                        </div>
+                        <!-- Menu Item Body End -->
+                      </div>
+                      <!-- Our Menu Item End -->
+
+                      <!-- Our Menu Item Start -->
+                      <div class="menu-list-item">
+                        <!-- Our Menu Image Start -->
+                        <div class="menu-list-image">
+                          <figure>
+                            <img src="images/pricing-menu-3.png" alt="" />
+                          </figure>
+                        </div>
+                        <!-- Our Menu Image End -->
+
+                        <!-- Menu Item Body Start -->
+                        <div class="menu-item-body">
+                          <!-- Menu Item Title Start -->
+                          <div class="menu-item-title">
+                            <h3>Pour Over</h3>
+                            <hr />
+                            <span>$5.99</span>
+                          </div>
+                          <!-- Menu Item Title End -->
+
+                          <!-- Menu Item Content Start -->
+                          <div class="menu-item-content">
+                            <p>
+                              Hand-crafted pour over coffee with carefully
+                              selected beans and precise brewing method.
+                            </p>
+                          </div>
+                          <!-- Menu Item Content End -->
+                        </div>
+                        <!-- Menu Item Body End -->
+                      </div>
+                      <!-- Our Menu Item End -->
+
+                      <!-- Our Menu Item Start -->
+                      <div class="menu-list-item">
+                        <!-- Our Menu Image Start -->
+                        <div class="menu-list-image">
+                          <figure>
+                            <img src="images/pricing-menu-4.png" alt="" />
+                          </figure>
+                        </div>
+                        <!-- Our Menu Image End -->
+
+                        <!-- Menu Item Body Start -->
+                        <div class="menu-item-body">
+                          <!-- Menu Item Title Start -->
+                          <div class="menu-item-title">
+                            <h3>French Press</h3>
+                            <hr />
+                            <span>$5.99</span>
+                          </div>
+                          <!-- Menu Item Title End -->
+
+                          <!-- Menu Item Content Start -->
+                          <div class="menu-item-content">
+                            <p>
+                              Full-bodied coffee brewed using the French press
+                              method for maximum flavor extraction.
+                            </p>
+                          </div>
+                          <!-- Menu Item Content End -->
+                        </div>
+                        <!-- Menu Item Body End -->
+                      </div>
+                      <!-- Our Menu Item End -->
+                    </div>
+                    <!-- Our Menu List End -->
+                  </div>
+                </div>
+              </div>
+              <!-- Pricing Boxes End -->
+
+              <div
+                class="section-footer-text wow fadeInUp"
+                data-wow-delay="0.2s"
+              >
+                <p>
+                  craving the perfect brew?
+                  <a href="locations.html">visit us today!</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Our Pricing Section End -->
+
+    <!-- Interactive Process Layout Start -->
+    <div class="interactive interactive-process-layout">
+      <!-- Interactive Process Wrapper Start -->
+      <div class="interactive-interactive-process-wrapper interactive-wrapper">
+        <div class="interactive-con">
+          <!-- Interactive Inner Grid Start -->
+          <div class="interactive-con-inner interactive-grid">
+            <!-- Interactive Process Item Start -->
+            <div class="interactive-process-item">
+              <div class="interactive-inner-process activate" data-index="0">
+                <div class="process-content-wap">
+                  <div class="process-inner-content-wap">
+                    <p>Open for dining</p>
+                    <h2><a href="#">Full catering</a></h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Interactive Process Item End -->
+
+            <!-- Interactive Process Item Start -->
+            <div class="interactive-process-item">
+              <div class="interactive-inner-process" data-index="1">
+                <div class="process-content-wap">
+                  <div class="process-inner-content-wap">
+                    <p>Rituals for focus, health & slowness</p>
+                    <h2><a href="#">Tea selection</a></h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Interactive Process Item End -->
+
+            <!-- Interactive Process Item Start -->
+            <div class="interactive-process-item">
+              <div class="interactive-inner-process" data-index="2">
+                <div class="process-content-wap">
+                  <div class="process-inner-content-wap">
+                    <p>Book now</p>
+                    <h2><a href="#">Private dining</a></h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Interactive Process Item End -->
+
+            <!-- Interactive Process Item Start -->
+            <div class="interactive-process-item">
+              <div class="interactive-inner-process" data-index="3">
+                <div class="process-content-wap">
+                  <div class="process-inner-content-wap">
+                    <p>Come's to diner now</p>
+                    <h2><a href="#">Laguna beach</a></h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Interactive Process Item End -->
+          </div>
+          <!-- Interactive Inner Grid End -->
+
+          <!-- Interactive Process Image Start -->
+          <div class="interactive-process-list-image">
+            <div
+              class="interactive-process-image img-0 show"
+              data-bg="images/interactive-process-image-1.jpg"
+              style="
+                background-image: url('images/interactive-process-image-1.jpg');
+              "
+            ></div>
+            <div
+              class="interactive-process-image img-1"
+              data-bg="images/interactive-process-image-2.jpg"
+              style="
+                background-image: url('images/interactive-process-image-2.jpg');
+              "
+            ></div>
+            <div
+              class="interactive-process-image img-2"
+              data-bg="images/interactive-process-image-3.jpg"
+              style="
+                background-image: url('images/interactive-process-image-3.jpg');
+              "
+            ></div>
+            <div
+              class="interactive-process-image img-3"
+              data-bg="images/interactive-process-image-4.jpg"
+              style="
+                background-image: url('images/interactive-process-image-4.jpg');
+              "
+            ></div>
+          </div>
+          <!-- Interactive Process Image End -->
+        </div>
+      </div>
+      <!-- Interactive Process Wrapper End -->
+    </div>
+    <!-- Interactive Process Layout End -->
+
+    <!-- Our Offers Section Start -->
+
+    <!-- Our Offers Section End -->
+
+    <!-- About Restaurant Section Start -->
+    <div class="about-restaurant light-bg-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 order-lg-1 order-md-1">
+            <!-- About Restaurant Content Start -->
+            <div class="about-restaurant-content">
+              <!-- Section Title Start -->
+              <div class="section-title">
+                <h3 class="wow fadeInUp">About restaurant</h3>
+                <h2 class="text-anime-style-3" data-cursor="-opaque">
+                  Our philosophy
+                </h2>
+              </div>
+              <!-- Section Title End -->
+
+              <!-- About Restaurant Info Start -->
+              <div class="about-restaurant-info">
+                <h3 class="wow fadeInUp" data-wow-delay="0.2s">
+                  A place where food, design, and ambiance come together to
+                  create a experience.
+                </h3>
+                <p class="wow fadeInUp" data-wow-delay="0.4s">
+                  Experience Ray's incomparable outdoor riverside dining at
+                  Ray's on the river, along with scenic.
+                </p>
+                <p class="wow fadeInUp" data-wow-delay="0.6s">
+                  While social distancing is one of our top priorities, guests
+                  may still enjoy beautiful surrounding.
+                </p>
+              </div>
+              <!-- About Restaurant Info End -->
+
+              <!-- About Author Start -->
+              <div class="about-author-box wow fadeInUp" data-wow-delay="0.8s">
+                <img src="images/author-signature.svg" alt="" />
+                <h3>johnathan - chef master</h3>
+              </div>
+              <!-- About Author End -->
+            </div>
+            <!-- About Restaurant Content End -->
+          </div>
+
+          <div class="col-lg-4 order-lg-2 order-md-3">
+            <!-- About Restaurant Image Start -->
+            <div class="about-restaurant-image">
+              <figure class="image-anime">
+                <img src="images/about-restaurant-img.jpg" alt="" />
+              </figure>
+            </div>
+            <!-- About Restaurant Image End -->
+          </div>
+
+          <div class="col-lg-4 col-md-6 order-lg-3 order-md-2">
+            <!-- Restaurant Timing Box Start -->
+            <div class="restaurant-timing-box">
+              <!-- Section Title Start -->
+              <div class="section-title">
+                <h3 class="wow fadeInUp">Time of luxury</h3>
+                <h2 class="text-anime-style-3" data-cursor="-opaque">
+                  open hour time
+                </h2>
+              </div>
+              <!-- Section Title End -->
+
+              <!-- Restaurant Timing Body Start -->
+              <div class="restaurant-time-body">
+                <h3 class="wow fadeInUp" data-wow-delay="0.2s">
+                  Come and experience the classy atmosphere with delicious food
+                  and music.
+                </h3>
+                <ul class="wow fadeInUp" data-wow-delay="0.4s">
+                  <li>Sunday - Thursday : 8:00am - 12:00pm</li>
+                  <li>Friday - Saturday : 8:00am - 1:00am</li>
+                  <li>Holiday : Closed</li>
+                </ul>
+                <h3 class="wow fadeInUp" data-wow-delay="0.6s">
+                  “ On holidays is a special day, we will open and with special
+                  offer, we will announce! “
+                </h3>
+              </div>
+              <!-- Restaurant Timing Body End -->
+            </div>
+            <!-- Restaurant Timing Box End -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Restaurant Section End -->
+
+    <!-- Our Testimonials Section Start -->
+    <div class="our-testimonials parallaxie">
+      <div class="container">
+        <div class="row section-row">
+          <div class="col-lg-12">
+            <!-- Section Title Start -->
+            <div class="section-title">
+              <h3 class="wow fadeInUp">our testimonials</h3>
+              <h2 class="text-anime-style-3" data-cursor="-opaque">
+                Hear from those who know us best
+              </h2>
+            </div>
+            <!-- Section Title End -->
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Testimonial Slider Start -->
+            <div class="testimonial-slider">
+              <div class="swiper">
+                <div class="swiper-wrapper" data-cursor-text="Drag">
+                  <!-- Testimonial Slide Start -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="testimonial-content">
+                        <p>
+                          “ From the moment I contacted them, I knew I was in
+                          good hands. The property exceeded all my expectations,
+                          and the team's expertise made the entire buying
+                          experience seamless.
+                        </p>
+                      </div>
+                      <div class="author-info">
+                        <p>leslie alexander, ukco - united kingdom co.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Testimonial Slide End -->
+
+                  <!-- Testimonial Slide Start -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="testimonial-content">
+                        <p>
+                          “ From the moment I contacted them, I knew I was in
+                          good hands. The property exceeded all my expectations,
+                          and the team's expertise made the entire buying
+                          experience seamless.
+                        </p>
+                      </div>
+                      <div class="author-info">
+                        <p>ukco - united kingdom co.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Testimonial Slide End -->
+                </div>
+                <div class="testimonial-btn">
+                  <div class="testimonial-btn-prev"></div>
+                  <div class="testimonial-btn-next"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial Slider End -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Our Testimonials Section End -->
+
+    <!-- CTA Box Section Start -->
+    <div class="cta-box">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- CTA Box Content Start -->
+            <div class="cta-box-content">
+              <!-- Section Title Start -->
+              <div class="section-title">
+                <h3 class="wow fadeInUp">Coffee at your fingertips</h3>
+                <h2 class="text-anime-style-3" data-cursor="-opaque">
+                  Download our mobile app
+                </h2>
+                <p class="wow fadeInUp" data-wow-delay="0.2s">
+                  Stay connected with Roast wherever you go. With our mobile
+                  app, you can browse the menu, place orders, schedule pickups,
+                  and enjoy exclusive rewards — all from the convenience of your
+                  phone. Download and bring your favorite coffee.
+                </p>
+              </div>
+              <!-- Section Title End -->
+
+              <!-- CTA Box Buttons Start -->
+              <div class="cta-box-buttons wow fadeInUp" data-wow-delay="0.4s">
+                <a href="#" class="btn-default"
+                  ><i class="fa-brands fa-app-store-ios"></i> App Store</a
+                >
+                <a href="#" class="btn-default"
+                  ><i class="fa-brands fa-google-play"></i> Google Play</a
+                >
+              </div>
+              <!-- CTA Box Buttons End -->
+            </div>
+            <!-- CTA Box Content End -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CTA Box Section End -->
+
+    <!-- Main Footer Section Start -->
+    <footer class="main-footer parallaxie">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Footer Contact List Start -->
+            <div class="footer-contact-list">
+              <!-- Footer Contact Item Start -->
+              <div class="footer-contact-item">
+                <div class="icon-box">
+                  <img src="images/icon-phone-accent.svg" alt="" />
+                </div>
+                <div class="footer-contact-detail">
+                  <h3>contact us</h3>
+                  <p>T. <a href="tel:+123456789">(346) 594-1017</a></p>
+                  <p>
+                    M.
+                    <a href="mainto:info@domainname.com"
+                      >mazajjorganiccoffee@gmail.com</a
+                    >
+                  </p>
+                </div>
+                <div class="footer-contact-button">
+                  <a href="contact.html" class="btn-default btn-highlighted"
+                    >contact us</a
+                  >
+                </div>
+              </div>
+              <!-- Footer Contact Item End -->
+
+              <!-- Footer Contact Item Start -->
+              <div class="footer-contact-item">
+                <div class="icon-box">
+                  <img src="images/icon-location-accent.svg" alt="" />
+                </div>
+                <div class="footer-contact-detail">
+                  <h3>store locations</h3>
+                  <p>3810 N Mason Rd building 2 unit A, Katy, TX 77449</p>
+                  <p>5549 Richmond Ave., Houston, TX 77056</p>
+                </div>
+                <div class="footer-contact-button">
+                  <a href="locations.html" class="btn-default btn-highlighted"
+                    >get direction</a
+                  >
+                </div>
+              </div>
+              <!-- Footer Contact Item End -->
+
+              <!-- Footer Contact Item Start -->
+              <div class="footer-contact-item">
+                <div class="icon-box">
+                  <img src="images/icon-clock-accent.svg" alt="" />
+                </div>
+                <div class="footer-contact-detail">
+                  <h3>opening hours</h3>
+                  <p>Monday - Thursday: From 8:00 AM To 12:00 PM</p>
+                  <p>Friday - Saturday : 8:00am - 1:00am</p>
+                  <p>Sunday : 8:00am - 12:00pm</p>
+                </div>
+                <div class="footer-contact-button">
+                  <a href="locations.html" class="btn-default btn-highlighted"
+                    >reserve a table</a
+                  >
+                </div>
+              </div>
+              <!-- Footer Contact Item End -->
+            </div>
+            <!-- Footer Contact List End -->
+          </div>
+
+          <div class="col-lg-12">
+            <!-- Footer Copyright Start -->
+            <div class="footer-copyright">
+              <!-- Footer Copyright Text Start -->
+              <div class="footer-copyright-text order-md-1 order-3">
+                <p>Copyright © 2025 All Rights Reserved.</p>
+              </div>
+              <!-- Footer Copyright Text End -->
+
+              <!-- Footer Logo Start -->
+              <div class="footer-logo order-md-2 order-1">
+                <img src="images/logo.svg" alt="" />
+              </div>
+              <!-- Footer Logo End -->
+
+              <!-- Footer Social Links Start -->
+              <div class="footer-social-links order-md-3 order-2">
+                <ul>
+                  <li>
+                    <a href="https://www.instagram.com/mazajjorganiccoffee"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/mazajjorganiccoffee"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.tiktok.com/@mazajj.organic.coffee"
+                      ><i class="fa-brands fa-tiktok"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Footer Social Links End -->
+            </div>
+            <!-- Footer Copyright End -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Main Footer Section End -->
+
+    <!-- Jquery Library File -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap js file -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Validator js file -->
+    <script src="js/validator.min.js"></script>
+    <!-- SlickNav js file -->
+    <script src="js/jquery.slicknav.js"></script>
+    <!-- Swiper js file -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Counter js file -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Isotop js file -->
+    <script src="js/isotope.min.js"></script>
+    <!-- Magnific js file -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- SmoothScroll -->
+    <script src="js/SmoothScroll.js"></script>
+    <!-- Parallax js -->
+    <script src="js/parallaxie.js"></script>
+    <!-- MagicCursor js file -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <!-- Text Effect js file -->
+    <script src="js/SplitText.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <!-- YTPlayer js File -->
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <!-- Wow js file -->
+    <script src="js/wow.min.js"></script>
+    <!-- Main Custom js file -->
+    <script src="js/function.js"></script>
+
+    <!-- Language Switcher JavaScript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const langButtons = document.querySelectorAll(".lang-btn");
+        const html = document.documentElement;
+
+        // Function to update text content
+        function updateText(lang) {
+          const elements = document.querySelectorAll("[data-en], [data-ar]");
+          elements.forEach((element) => {
+            const text = element.getAttribute(`data-${lang}`);
+            if (text) {
+              element.textContent = text;
+            }
+          });
+
+          // Update title
+          const title = document.querySelector("title");
+          const titleText = title.getAttribute(`data-${lang}`);
+          if (titleText) {
+            title.textContent = titleText;
+          }
+        }
+
+        // Function to update direction
+        function updateDirection(lang) {
+          const dir = lang === "ar" ? "rtl" : "ltr";
+          html.setAttribute("dir", dir);
+          html.setAttribute("lang", lang);
+        }
+
+        // Language switcher functionality
+        langButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const lang = this.getAttribute("data-lang");
+
+            // Update active button
+            langButtons.forEach((btn) => btn.classList.remove("active"));
+            this.classList.add("active");
+
+            // Update page direction and language
+            updateDirection(lang);
+
+            // Update text content
+            updateText(lang);
+
+            // Store preference
+            localStorage.setItem("preferred-language", lang);
+          });
+        });
+
+        // Load saved language preference
+        const savedLang = localStorage.getItem("preferred-language");
+        if (savedLang) {
+          const savedButton = document.querySelector(
+            `[data-lang="${savedLang}"]`
+          );
+          if (savedButton) {
+            savedButton.click();
+          }
+        }
+      });
+    </script>
+
+    <!-- Business Popup JavaScript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Show popup after 5 seconds
+        setTimeout(function () {
+          const popup = document.getElementById("businessPopup");
+          popup.style.display = "flex";
+
+          // Prevent scrolling on the body
+          document.body.style.overflow = "hidden";
+
+          // Prevent closing the popup
+          popup.addEventListener("click", function (e) {
+            e.stopPropagation();
+          });
+
+          // Prevent closing with escape key
+          document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") {
+              e.preventDefault();
+              e.stopPropagation();
+            }
+          });
+
+          // Prevent closing with right-click
+          document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+          });
+
+          // Prevent closing with any other method
+          popup.addEventListener("keydown", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+          });
+        }, 5000); // 5 seconds delay
+      });
+    </script>
+  </body>
+</html>
